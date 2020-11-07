@@ -1,14 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import HomePage from "./pages/homepage/homepage.component";
+import { Switch, Route } from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <HomePage></HomePage>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <Route exact path="/" component={HomePage} />
+    </div>
+  );
 }
 
 export default App;
